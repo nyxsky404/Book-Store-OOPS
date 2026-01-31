@@ -1,11 +1,6 @@
 import express from "express";
 import { connect } from "mongoose";
-
-// Interface for route classes
-interface Routes {
-  path?: string;
-  router: express.Router;
-}
+import { Routes } from "./interfaces/routes.interface";
 
 class App {
   public app: express.Application;
