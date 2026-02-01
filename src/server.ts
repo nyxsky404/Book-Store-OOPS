@@ -1,6 +1,6 @@
 import "dotenv/config";
 import App from "./app";
+import BookRoutes from "./routes/book.routes";
 
-// Initialize app with empty routes for now
-const app = new App([]);
+const app = new App([new BookRoutes()]);
 app.startServer();
